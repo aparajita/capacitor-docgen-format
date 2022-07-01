@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownSettings">
+    <option name="customStylesheetPath" value="$PROJECT_DIR$/../../../web/github-markdown-dark.css" />
+    <option name="customStylesheetText" value="&#9;.markdown-body {&#10;&#9;&#9;box-sizing: border-box;&#10;&#9;&#9;min-width: 200px;&#10;&#9;&#9;max-width: 980px;&#10;&#9;&#9;margin: 0 auto;&#10;&#9;&#9;padding: 45px;&#10;&#9;}&#10;&#10;&#9;@media (max-width: 767px) {&#10;&#9;&#9;.markdown-body {&#10;&#9;&#9;&#9;padding: 15px;&#10;&#9;&#9;}&#10;&#9;}&#10;" />
+    <enabledExtensions>
+      <entry key="MermaidLanguageExtension" value="false" />
+      <entry key="PlantUMLLanguageExtension" value="false" />
+    </enabledExtensions>
+    <option name="useCustomStylesheetPath" value="true" />
+    <option name="useCustomStylesheetText" value="true" />
+  </component>
+</project>

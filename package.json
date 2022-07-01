@@ -1,0 +1,53 @@
+{
+  "name": "@aparajita/capacitor-docgen-format",
+  "version": "1.0.0",
+  "description": "Post-processor for @capacitor/docgen that modifies the formatting",
+  "keywords": [
+    "capacitor",
+    "docs"
+  ],
+  "author": "Aparajita Fishman",
+  "license": "MIT",
+  "main": "docgen-format.mjs",
+  "bin": {
+    "docgen-format": "docgen-format.mjs"
+  },
+  "engines": {
+    "node": ">=16.15.1"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.cjs,.mjs,.ts .",
+    "lint.fix": "pnpm lint --fix",
+    "check": "pnpm lint && pnpm prettier && echo '✅ All good!'",
+    "check.fix": "pnpm lint.fix && pnpm prettier.fix && echo '✅ All good!'",
+    "prettier": "prettier --check .",
+    "prettier.fix": "pnpm prettier --write",
+    "release": "commit-and-tag-version",
+    "push": "git push --follow-tags origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aparajita/capacitor-docgen-format.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aparajita/capacitor-docgen-format/issues"
+  },
+  "homepage": "https://github.com/aparajita/capacitor-docgen-format#readme",
+  "devDependencies": {
+    "@aparajita/eslint-config-base": "^1.1.2",
+    "@aparajita/prettier-config": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.3",
+    "@typescript-eslint/parser": "^5.30.3",
+    "commit-and-tag-version": "^10.0.1",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-import-resolver-typescript": "^3.1.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "prettier": "@aparajita/prettier-config"
+}
